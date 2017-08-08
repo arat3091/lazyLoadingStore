@@ -1,14 +1,9 @@
-<md-sidenav-container  class="example-container">
+<md-sidenav-container class="example-container">
   <md-sidenav opened='true' mode='side' class="example-sidenav">
     <md-list>
-      <md-list-item>
-        <a>
-          inbox
-        </a>
-      </md-list-item>
-      <md-list-item>
-        <a>
-          trash
+      <md-list-item *ngFor='let folder of folders'>
+        <a [routerLink]="folder">
+          {{folder}}
         </a>
       </md-list-item>
     </md-list>
