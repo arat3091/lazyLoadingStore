@@ -1,21 +1,16 @@
-<md-sidenav-container  class="example-container">
-  <md-sidenav opened='true' mode='side' class="example-sidenav">
-    <md-list>
-      <md-list-item>
-        <a [routerLink]="'/dashboard'">
-          dashboard
-        </a>
-      </md-list-item>
-      <md-list-item>
-      <a routerLink='/mailbox'>
-        mailbox
-      </a>
-      </md-list-item>
-    </md-list>
-  </md-sidenav>
+<md-toolbar color="accent">
+  <div fxLayout="row">
+    <div fxFlex='80'>
+      <a [routerLink]="'/dashboard'">
+        dashboard</a>
+    </div>
 
-  <div class="example-sidenav-content">
-    <router-outlet></router-outlet>
+    <div fxFlex='20'><a routerLink='/mailbox'>
+      mailbox
+    </a></div>
   </div>
-</md-sidenav-container>
+</md-toolbar>
 
+<div class="example-sidenav-content">
+  <router-outlet></router-outlet>
+</div>
