@@ -10,7 +10,7 @@ pipeline {
                         * nonsense breaks with HOME=/, e.g.:
                         * EACCES: permission denied, mkdir '/.config'
                         */
-                        'HOME=.',
+
                     ]) {
 
                 sh 'node --version'
