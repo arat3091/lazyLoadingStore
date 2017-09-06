@@ -16,7 +16,7 @@ pipeline {
                 sh 'node --version'
                 sh 'cat /etc/os-release'
                 sh 'npm install'
-                sh 'npm build'
+                sh 'npm run-script build'
                 }
             }
         }
