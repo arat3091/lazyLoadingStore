@@ -5,7 +5,7 @@ pipeline {
             steps {
                 sh 'node --version'
                 sh 'svn --version'
-                sh 'cat /etc/os -release'
+                sh 'cat /etc/os-release'
             }
         }
     }
