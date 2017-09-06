@@ -5,7 +5,8 @@ pipeline {
             steps {
                 sh 'node --version'
                 sh 'svn --version'
-                sh 'cat /etc/os-release'
+                sh 'npm install'
+                sh 'npm build'
             }
         }
     }
