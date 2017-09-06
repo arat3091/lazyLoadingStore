@@ -5,8 +5,8 @@ pipeline {
             steps {
                 sh 'node --version'
                 sh 'svn --version'
-                sh 'npm install'
-                sh 'npm build'
+                sh 'sudo npm install'
+                sh 'sudo npm build'
             }
         }
     }
