@@ -9,7 +9,7 @@ export class FolderService {
   }
 
   getFolders(): Observable<Array<string>> {
-    return Observable.of(['inbox', 'trash']);
+    return Observable.of(['inbox', 'trash', 'sent']);
   }
 
 }
